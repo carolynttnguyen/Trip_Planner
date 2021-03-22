@@ -1,0 +1,18 @@
+*{
+    font-family: 'Short Stack', cursive;
+}
+
+.navbar {
+    margin: 25px;
+    padding: 25px;
+}
+
+.nav-b {
+    margin:15px;
+    justify-content:end;
+}
+
+div{
+    display: block;
+    margin: 75px;
+}

@@ -1,0 +1,32 @@
+*{
+    font-family: 'Short Stack', cursive;
+    margin: 5px;
+}
+
+#register {
+    float: left;
+    width: 500px;
+    height: 550px;
+    margin-left: 100px;
+}
+
+#login{
+    float:right;
+    width: 500px;
+    height: 550px;
+    margin-right: 100px;
+}
+
+h1 {
+    margin:25px;
+    padding: 25px;
+}
+h3{
+    text-align: center;
+}
+
+
+.btn{
+    margin-left:200px;
+    box-shadow: 5px 5px black;
+}

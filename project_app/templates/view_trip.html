@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Job</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/trip.css' %}">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light">
+        <ul  class="nav">
+            <li>
+                <a class="nav-b" href="/dashboard">Back</a>
+            </li>
+            <li>
+                <a class="nav-b" href="/logout">Logout</a>
+            </li>
+        </ul>
+    </nav>
+       
+    <div>
+        <h3> {{trip.destination}}</h3>
+        <p>
+            Planned by: {{trip.planned_by.first_name}} {{trip.planned_by.last_name}}
+        </p>
+        <p>
+            Description: {{trip.description}}
+        </p>
+        <p>
+            Travel Date From: {{trip.travel_date_from}}
+        </p>
+        <p>
+            Travel Date To: {{trip.travel_date_to}}
+        </p>
+    </div>
+
+    <div>
+        <h3>Other Users Joining the Trip:</h3>
+        {% for traveler in joined_travelers %}
+        <ul>
+            <li>
+                {{traveler.first_name}}
+            </li>
+        </ul>
+       {% endfor %}
+    </div>
+    
+</body>
+</html>

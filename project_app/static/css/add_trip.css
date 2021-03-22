@@ -1,0 +1,24 @@
+*{
+    font-family: 'Short Stack', cursive;
+    margin: 5px;
+}
+
+.nav-b {
+    margin:15px;
+}
+
+h2{
+    margin:25px;
+}
+
+div {
+    padding:1rem;
+
+}
+
+.btn{
+    margin-left:200px;
+    box-shadow: 5px 5px black;
+}
+
+

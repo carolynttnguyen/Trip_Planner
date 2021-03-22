@@ -1,0 +1,25 @@
+For a red belt:
+    xxLogin and Registration with validations
+    xxValidation errors should appear on the page
+    xxLogout feature
+    xxPassword should be at least 8 characters
+
+Dashboard
+    Display the logged user's created and joined travel plans in the Trip Schedules table
+    Display the other users' travel plans
+    Display should be specific per user
+    Able to join other users' travel plans
+    Cancel link removes a trip from the user's Trip Schedules table
+    Delete link appears if the logged user added the trip
+    Delete link removes the trip from the database
+
+Details page
+    Display a particular travel plan
+    Includes a list of users who joined the plan
+    Create new travel plans
+    Able to add new travel plans
+
+Validation applies
+    Validation errors should appear on the page
+    The newly added travel plan should appear on the logged user's Trip Schedules table
+    HTML and CSS reflect the wireframe to at least 75% accuracy
